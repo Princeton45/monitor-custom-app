@@ -3,6 +3,8 @@
 ## Overview
 In this project, I implemented a comprehensive monitoring solution for my Node.js application using Prometheus and Grafana. The monitoring system runs within a Kubernetes cluster and provides real-time metrics visualization.
 
+![diagram](https://github.com/Princeton45/monitor-custom-app/blob/main/images/diagram.png)
+
 ## Technologies Used
 - Node.js
 - Prometheus

@@ -1,0 +1,27 @@
+flowchart TB
+    subgraph NodeJS ["Node.js Application"]
+        A[Application Code] --> B[Prometheus Client Library]
+        B --> C["metrics Endpoint"]
+    end
+    
+    subgraph Docker ["Docker Container"]
+        NodeJS
+    end
+    
+    subgraph K8s ["Kubernetes Cluster"]
+        Docker --> D[K8s Deployment]
+        D --> E[K8s Service]
+        
+        subgraph Monitoring ["Monitoring Stack"]
+            F[Prometheus Server] --> G[(Prometheus Storage)]
+            G --> H[Grafana Server]
+            H --> I[Grafana Dashboards]
+        end
+        
+        E -->|Scrape Target| F
+    end
+    
+    style NodeJS fill:#90CAF9,stroke:#1E88E5,stroke-width:2px
+    style Docker fill:#FFE0B2,stroke:#FB8C00,stroke-width:2px
+    style K8s fill:#D1C4E9,stroke:#673AB7,stroke-width:2px
+    style Monitoring fill:#FFCDD2,stroke:#E53935,stroke-width:2px

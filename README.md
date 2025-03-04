@@ -1,4 +1,4 @@
-# Monitoring a custom application
+# Monitoring a Custom Node.js application
 
 ## Overview
 In this project, I implemented a comprehensive monitoring solution for my Node.js application using Prometheus and Grafana. The monitoring system runs within a Kubernetes cluster and provides real-time metrics visualization.

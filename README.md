@@ -180,16 +180,3 @@ I set up Grafana with Prometheus as a data source and created custom dashboards 
 I created a `Requests Per Second` panel and a `Requests Duration` panel using PromQl query
 
 ![grafana](https://github.com/Princeton45/monitor-custom-app/blob/main/images/grafana.png)
-
-
-*[Suggested image: Screenshot of the Grafana dashboard showing application metrics]*
-
-## Results
-The monitoring system now provides real-time visibility into my application's performance. Key metrics are visualized through custom Grafana dashboards, enabling quick identification of potential issues and performance bottlenecks.
-
-*[Suggested image: Full monitoring pipeline overview showing data flow from application to Prometheus to Grafana]*
-
-## Future Improvements
-- Set up alerting based on metric thresholds
-- Add more detailed application-specific metrics
-- Implement logging integration with the monitoring system
